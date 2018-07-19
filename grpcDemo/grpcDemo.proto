@@ -1,0 +1,15 @@
+syntax = "proto3";
+package grpcDemo;
+
+service Sum {
+	rpc GetSum (Req) returns (Resp) {}
+}
+
+message Req {
+	int32 m = 1;
+	int32 n = 2;
+}
+
+message Resp {
+	int32 s = 1;
+}
